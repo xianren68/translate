@@ -1,0 +1,29 @@
+// default theme(light).
+body {
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --primary-color: #5aa5f5;
+  --secondary-color: #cfe3f4;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+// dark theme.
+body.dark-theme {
+  --background-color: #343a40;
+  --text-color: #ffffff;
+  --primary-color: #20c997;
+  --secondary-color: #17a2b8;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+// blue theme.
+body.blue-theme {
+  --background-color: #007bff;
+  --text-color: #ffffff;
+  --primary-color: #ffffff;
+  --secondary-color: #007bff;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
