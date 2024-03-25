@@ -1,4 +1,4 @@
-class LangPattern extends HTMLElement {
+export class LangPattern extends HTMLElement {
     private static readonly LANGUAGES: string[] = ['中文', 'English', '日本語']
     private active:number = 0
     // whether to display the language selection box.
@@ -37,4 +37,3 @@ class LangPattern extends HTMLElement {
         this.appendChild(content)
     }
 }
-window.customElements.define('lang-pattern', LangPattern)

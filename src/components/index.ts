@@ -1,1 +1,2 @@
-import './langPattern'
+export * from './langPattern'
+export * from './areaText'
