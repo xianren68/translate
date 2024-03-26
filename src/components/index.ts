@@ -1,2 +1,2 @@
-export * from './langPattern'
+export * from './select'
 export * from './areaText'

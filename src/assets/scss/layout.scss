@@ -16,8 +16,7 @@ body {
     justify-content: space-around;
     .left,.right {
       width: 40%;
-      /* language-pattern */
-      lang-pattern {
+        xr-select {
         position: relative;
         .show {
           display: flex;

@@ -11,26 +11,14 @@
   </head>
 
   <body>
-    <template id="lang-pattern">
-      <div class="show">
-        <div class="text"></div>
-        <div class="ic">
-          <svg class="icon" aria-hidden="true">
-            <use xlink:href="#icon-xiala"></use>
-        </svg>
-        </div>
-      </div>
-      <div class="select">
-      </div>
-    </template>
     <div class="content">
       <div class="left">
-        <lang-pattern pattern="中文"></lang-pattern>
+        <xr-select value="中文" values='["中文","English","日语"]'></xr-select>
         <area-text mode=true></area-text>
       </div>
       <div class="mid"></div>
       <div class="right">
-        <lang-pattern pattern="English"></lang-pattern>
+        <xr-select value="English" values='["中文","English","日语"]'></xr-select>
         <area-text></area-text>
       </div>
     </div>
