@@ -1,5 +1,5 @@
 export class xrSelect extends HTMLElement {
-  private static template: string = `<template id="lang-pattern">
+  private static template: string = `<template id="xr-select">
    <div class="show">
      <div class="text"></div>
      <div class="ic">
@@ -17,12 +17,12 @@ export class xrSelect extends HTMLElement {
     super()
     const value = this.getAttribute("value") || "无可选项"
     const values = JSON.parse(this.getAttribute("values") || "[]")
-    const template = document.createElement("template")
-    template.innerHTML = xrSelect.template
-    const content = template.content.cloneNode(true) as HTMLElement
-    console.log(content)
+    const div = document.createElement("div")
+    div.innerHTML = xrSelect.template
+    const template = div.querySelector("template")
+    const content = template?.content.cloneNode(true) as HTMLElement
     const selected = content?.querySelector(".show") as HTMLElement
-    const text = selected.getElementsByClassName(".text")[0] as HTMLElement
+    const text = selected.querySelector(".text") as HTMLElement
     text.innerText = value
     const select = content.querySelector(".select") as HTMLElement
     select.innerHTML = values.map((value:string)=>{

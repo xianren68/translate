@@ -4,13 +4,12 @@ export class AreaText extends HTMLElement {
     }
     connectedCallback(){
         const mode = this.getAttribute('mode') || false
-        console.log(mode)
-        const container = document.createElement('div')
+        let container:HTMLElement
         // 输入模式
         if(mode){
-            container.innerHTML = `<textarea>ddd</textarea>`
+            container = document.createElement('textarea')
         }else{
-            container.innerHTML = `<span>fsf</span>`
+            container = document.createElement('span')
         }
         this.appendChild(container)
     }

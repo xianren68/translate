@@ -92,7 +92,11 @@ abbr[title] {
   text-decoration: underline; /* 2 */
   text-decoration: underline dotted; /* 2 */
 }
-
+textarea,input {
+  background-color: transparent;
+  outline: none;
+  padding:0 2px;
+}
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
