@@ -15,6 +15,7 @@ function main() {
   // get input value.
   inputValue.addEventListener('xrInput', (event: any) => {
     console.log(event.detail.message)
+    invoke('translate',{from:'zh',to:'en',q:event.detail.message})
   })
 }
 main()
